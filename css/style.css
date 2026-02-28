@@ -1,0 +1,613 @@
+
+
+/* 釣りにいこうぜ CSS */
+/* 釣りにいこうゼ実行委員会2026 */
+
+/* ーーーーー  以下共通部分 ーーーーーーーーーー */
+
+html {
+    font-size: 100%; /* 16pxが100％ */
+}
+
+li {
+    list-style: none; /* List表示の時の・を消す */
+    font-size: 1.2rem;
+}
+
+  /* 共通部分 みだしの幅をまとめて設定 */
+.wrapper {
+    max-width: 1280px;   
+    margin: 0 auto 80px auto ; 
+}
+
+/*  ーーーーー 共通部分ここまで ーーーーーーーーー */
+
+
+/* 画面の背景全体の色 */
+body {
+    background-color:rgb(202, 202, 202);
+}
+
+
+/* ーーーーーーー ヘッダー  ここから ーーーーーーー  */
+
+header .wrapper {
+    background-color: rgb(67, 92, 202);
+    max-width: 1280px;
+    margin: 0 auto 10px auto ;     /*上右下左の順で 0 auto 130px auto */
+}
+
+header .title-menu-row1 {
+    align-items: center;
+    margin: 1% auto;   /*上右下左の順で 0 auto 130px auto */
+    padding: 1% 4%;
+}
+
+header h1 {
+text-align: left;
+font-size: 2.4rem;
+font-weight: 800;
+color:rgb(210, 210, 210);
+text-shadow: 5px 5px 5px rgba(0,0,0,0.7); /*色 色 色 透明度*/ 
+}
+
+header h1 span{
+text-align: left;
+font-size: 2rem;
+font-weight: 700;
+color:rgb(190, 190, 190);
+}
+
+header .header-menu {
+    width: 200px;
+    text-align: center;
+    padding: 1%;
+    margin: 2% 10px 2% auto;
+    /* background-color: blue; */
+}
+
+header .header-menu a {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 2%;
+    /* background-color: rgb(52, 133, 119); */
+    width: 250px;
+}
+
+header .title-menu-row2 {
+    /* background-color: rgb(174, 176, 179); */
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    max-width: 1280px;
+    padding: 1% 4%;
+
+
+}
+
+
+header ul {
+    display: flex;
+    padding: 5px;
+    align-items: center;
+    /* background-color: blanchedalmond; */
+
+
+}
+
+/* ulの中のliの設定 */
+header ul li {
+    margin-left: 5px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.7); /*色 色 色 透明度*/ 
+}
+
+/* ulのliのaタグの設定  0.3秒かけて透明になる */
+header ul li a {
+    color: #dbdbdb;
+    transition: all 0.3s;
+}
+/* opacityは透明度 0.5にする。transitionと組み合わせて何秒でどのくらい変化させるかを設定 */
+header ul li a:hover {
+    opacity: 0.5;
+}
+/* ーーーーーーーーー  ヘッダー ここまで ーーーーーーーーーーー */
+
+
+/* ーーーーーーーー  ここから メインピクチャー  ーーーーーーーーーー */
+/* ーーーーーーーー  ここから メインピクチャー  ーーーーーーーーーー */
+
+.main-picture {
+    width: 1280px;
+    max-width: 1280px;
+    height: 620px; 
+    margin: 0 auto;
+    padding: 0 auto ; 
+    position: relative;     
+    /* 画像の上にテキストを重ねたい場合は、div要素（親要素）の中に画像と文字を子要素として入れ、
+    親要素にposition: relative;、重ねたい子要素にposition: absolute;を指定*/
+}
+
+
+.main-picture h2 {
+    position: absolute;
+    font-size: 6rem;
+    font-weight: 700;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.7); /*色 色 色 透明度*/ 
+    top: 10%;
+    left: 10%;
+    color:rgb(210, 210, 210);
+}
+
+.main-picture h2 span{
+    transform: translateY(0.5rem);
+    font-size: 4rem;
+    font-weight: 700;
+    color:rgb(190, 190, 190);
+}
+
+.main-picture p {
+    font-size: 2rem;
+    font-weight: 700;
+    bottom: 25%;
+    left: 10%;
+    position: absolute;
+    color: rgb(235, 211, 211);
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.7); /*色 色 色 透明度*/ 
+}
+
+
+.main-picture img{
+
+    width: 100%;
+    max-width: 1280px;
+
+    margin: 0 auto;
+    object-fit: cover;
+
+    position: absolute;     
+    /* 画像の上にテキストを重ねたい場合は、div要素（親要素）の中に画像と文字を子要素として入れ、
+    親要素にposition: relative;、重ねたい子要素にposition: absolute;を指定*/
+
+}
+
+/* ーーーーーーーー  メインピクチャー  ここまでーーーーーーーーーー */
+
+
+
+/* ーーーーーーーー  ここから たのしさ    ーーーーーーーーーー */
+/* ーーーーーーーー  ここから たのしさ    ーーーーーーーーーー */
+
+/* ーーーーーーーー  たのしさ 説明文    ーーーーーーーーーー */
+
+.happiness-fishing h2{
+    font-size: 2rem ;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    /* background-color: rgb(75, 94, 75); */
+}
+
+.happiness-fishing h2 span{
+    border-bottom: 5px solid #414df0;
+}
+
+
+.happiness-fishing p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left ;
+    line-height: 1.5;
+    /* background-color: rgb(176, 236, 176); */
+    margin-bottom: 30px;
+}
+
+
+
+/* ーーーーーーーー  たのしさ 説明写真    ーーーーーーーーーー */
+
+.section1 .wrapper{
+    width: 1280px;
+    padding: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto 80px auto;
+    object-fit: cover;
+    background-color: rgb(177, 176, 176);
+}
+
+
+.section1 .row {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section1 .row-reverse {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.section1 .col {
+    width: 49%;
+    align-items: center;
+}
+
+.section1 .row h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section1 .row p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.section1 .row-reverse h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: right;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section1 .row-reverse p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+    /* ーーーーーーー  たのしさ 説明文 ここまで ーーーーーーーーー  */
+
+
+
+    /* ーーーーーーーー 釣りもの(魚種)の紹介 ここから ーーーーーーーー  */
+    /* ーーーーーーーー 釣りもの(魚種)の紹介 ここから ーーーーーーーー  */
+
+.fishes-fishing h2{
+    font-size: 2rem ;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    /* background-color: rgb(75, 94, 75); */
+}
+.fishes-fishing h2 span{
+    border-bottom: 5px solid #414df0;
+}
+
+
+.fishes-fishing p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left ;
+    line-height: 1.5;
+    /* background-color: rgb(176, 236, 176); */
+    margin-bottom: 30px;
+}
+
+
+    /* ーーーーーーーーーー 釣りもの説明写真の調整 ーーーーーーーー  */
+
+.section2 .wrapper1{
+    width: 1280px;
+    padding: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto 0 auto;
+    object-fit: cover;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(193, 203, 211);
+    /* background-color: rgb(207, 202, 223); */
+}
+
+.section2 .wrapper2{
+    width: 1280px;
+    padding: 0 auto 20px auto;
+    max-width: 1280px;
+    margin: 0 auto 5px auto;
+    object-fit: cover;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(193, 203, 211);
+    /* background-color: rgb(207, 202, 223); */
+}
+
+.section2 .row2 {
+    width: 32%;
+}
+
+.section2 .row2 h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.section2 .row2 p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+/*   ーーー 釣りもの 魚種 の写真  追加説明 ーーーーーーーーーーー*/
+.section3 .wrapper3{
+    width: 1280px;
+    padding: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto 80px auto;
+    object-fit: cover;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(193, 203, 211);
+    /* background-color: rgb(207, 202, 223); */
+}
+
+.section3 .row3 h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 1rem;
+    /* background-color: #414df0; */
+}
+
+.section3 .row3 p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    margin-left: 10px;
+    margin-bottom: 1rem;
+}
+
+    /*   ーーー 釣りもの 魚種 の写真説明ここまで ーーーーーーーーーーー*/
+
+
+    /*   ーーー 魚とかんたん調理レシピ ここから  ーーーーーーーーーーー*/
+    /*   ーーー 魚とかんたん調理レシピ ここから  ーーーーーーーーーーー*/
+
+#cooking .wrapper {
+    padding: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto 30px auto;
+}
+
+
+
+.cooking-fishing h2{
+    font-size: 2rem ;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    /* background-color: rgb(75, 94, 75); */
+}
+
+.cooking-fishing h2 span{
+    border-bottom: 5px solid #414df0;
+}
+
+.cooking-fishing p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left ;
+    line-height: 1.5;
+    /* background-color: rgb(176, 236, 176); */
+    margin-bottom: 5px;
+}
+
+    /* ーーーーーーーーー ここから 調理レシピ ーーーーーーーーーーーーーーー */
+
+.section4-1 .wrapper4-1 {
+    padding: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto 80px auto;
+    background-color: rgb(214, 189, 205);
+    /* background-color: rgb(207, 202, 223); */
+}
+
+.section4-1 .row2 {
+    padding: 0 auto;
+    margin: 0 auto 10px auto;
+    display: flex;
+    justify-content:space-between;
+    background-color: rgb(214, 208, 212);
+    /* background-color: rgb(207, 202, 223); */
+}
+
+
+.section4-1 .row2 .col2 {
+    width: 40%;
+    object-fit: cover;
+    height: fit-content;
+}
+
+.section4-1 .row2 .col {
+    width: 60%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.section4-1 .row2 h3 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: left;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.section4-1 .row2 p {
+    font-size: 1.4rem;
+    font-weight: 500;
+    text-align: left;
+    margin-bottom: 1rem;
+
+}
+
+/*   ーーーーーーーーーー  簡単レシピ ここまで ーーーーーーーーーーーーーーーーー*/
+
+
+
+/* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど */
+/* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど */
+
+/*   ーーーーーーーーーー  釣行などなど みだし ーーーーーーーーーーーーーーーーー*/
+
+.gotofishing {
+    width: 1280px;
+    max-width: 100%;
+    padding : 0 auto;
+    /* background-color: rgb(206, 114, 201); */
+}
+
+.gotofishing-fishing h2{
+    font-size: 2rem ;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.8;
+    margin-bottom: 30px;
+    /* background-color: rgb(75, 94, 75); */
+}
+
+.gotofishing-fishing h2 span{
+    border-bottom: 5px solid #414df0;
+}
+
+.gotofishing-fishing p {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-align: left ;
+    line-height: 1.5;
+    /* background-color: rgb(176, 236, 176); */
+    margin-bottom: 5px;
+}
+/*   ーーーーーーーーーー  釣行 みだし ここまで ーーーーーーーーーーーーーーーーー*/
+
+#gotofishing {
+    padding: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto 30px auto;
+    /* background-color: rgb(74, 104, 5); */
+}
+
+
+#gotofishing .wrapper {
+    padding: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto 30px auto;
+    /* background-color: rgb(170, 235, 19); */
+    /* background-color: rgb(207, 202, 223); */
+}
+
+
+/*   ーーーーーーーーーー  釣行などなど 写真 ここから ーーーーーーーーーーーーーーーーー*/
+.section5 {
+    width: 1280px;
+    padding: 0 auto;
+    background-color: rgb(196, 211, 193);
+    /* background-color: #00abdb; */
+}
+
+.section5 .wrapper5 {
+    width: 1280px;
+    padding: 0 auto;
+    max-width: 100%;
+    margin: 0 0 10px 0;
+    object-fit: cover;
+    display: flex;    /* まず横並びにする */
+    justify-content: space-between;
+    background-color: rgb(196, 211, 193);
+}
+
+.section5 .row5a {
+    width: 33%;   /* 写真3枚を 33％づつならべる。あまりは1％ */
+    height: fit-content;
+    /* background-color: rgb(214, 189, 205); */
+}
+
+.section5 .col5b {
+    font-size: 1.4rem;
+    font-weight: 5000;
+    padding: 10px 10px 10px 10px;
+    text-align: left;
+    height: 200px;
+    background-color: rgb(178, 192, 174);
+}
+
+.wrapper5 img {
+    cursor: pointer;
+    transition: all 0.5s; /* 0.3秒かけて変形する */
+}
+
+.wrapper5 img:hover {
+    transform: scale(1.8, 1.8);   /* ホバーしたときにアイコンが1.8倍に大きくなる */
+    opacity: 1;   /* 10% = 0.9   70％の透け率にする = 0.3 */
+    box-shadow:10px 10px 10px rgba(0,0,0,0.5);
+    /* text-shadow: 5px 5px 5px rgba(0,0,0,0.7); 色 色 色 透明度  */
+    /* transform: translateY(-50px); 50px 上にうごく */
+}
+
+
+    /*   ーーーーー 釣行 もろもろ ここまで ーーーーーーーーーーーーーーー*/
+
+    /* ーーーーーーー フッター ここから ーーーーーーーーーーーーーーーーー   */
+    /* ーーーーーーー フッター ここから ーーーーーーーーーーーーーーーーー   */
+
+footer {
+    width: 1280px;
+    margin: 0 auto 0 auto;
+ 
+}
+
+footer .wrapper6 {
+    background-color: rgb(67, 92, 202);
+    /* background-color: rgb(67, 95, 221); */
+    max-width: 1280px;
+    padding: 0 auto;
+    margin-top: 50px ;     /*上右下左の順で 0 auto 130px auto */
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+
+footer .footer-row1 {
+margin-left: 50px;
+font-size: 2.4rem;
+font-weight: 800;
+color:rgb(210, 210, 210);
+text-shadow: 5px 5px 5px rgba(0,0,0,0.7); /*色 色 色 透明度*/ 
+/* background-color: rgb(3, 82, 82); */
+padding: 20px auto 5px 0px;
+}
+
+footer h1 span{
+font-size: 2rem;
+font-weight: 700;
+color:rgb(190, 190, 190);
+/* color:rgb(235, 211, 211); */
+/* background-color: rgb(3, 82, 82); */
+
+}
+
+footer .cp {
+    width: 350px;
+    padding: 1%;
+    margin-right: 50px;
+    margin: auto 0px auto auto;
+    color:rgb(210, 210, 210);
+    transform: translateY(30px);
+    /* background-color: blue; */
+    font-size: 1.2rem;
+}
+
