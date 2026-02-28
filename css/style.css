@@ -33,6 +33,7 @@ body {
 
 header .wrapper {
     background-color: rgb(67, 92, 202);
+    width: 1280px;
     max-width: 1280px;
     margin: 0 auto 10px auto ;     /*上右下左の順で 0 auto 130px auto */
 }
@@ -610,4 +611,5 @@ footer .cp {
     /* background-color: blue; */
     font-size: 1.2rem;
 }
+
 
