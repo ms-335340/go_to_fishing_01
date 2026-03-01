@@ -20,6 +20,48 @@ li {
     margin: 0 auto 80px auto ; 
 }
 
+
+/* ーーーーー 共通  ボタンのCSS ーーーーー */
+
+.btn{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: solid 2px #ffffff;
+    border-radius: 20px;
+    display: inline-block;
+    width: 160px;
+    line-height: 60px;
+    text-align: center;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    color: black;
+    border: solid 2px black;
+    transition: 0.3s;
+
+}
+
+.jumptoheader {
+    width: 1280px;
+    padding: 0 auto;
+    margin: -50px auto 50px auto;
+            display: flex;
+    justify-content: right;
+}
+
+.jumptoheader .to-top {
+    max-width: 1280px;
+    align-items: right;
+}
+
+
+/* ーーーーー 共通  ボタンのCSS ここまでーーーーー */
+
+
+
+
+
 /*  ーーーーー 共通部分ここまで ーーーーーーーーー */
 
 
@@ -28,12 +70,20 @@ body {
     background-color:rgb(202, 202, 202);
 }
 
+/* main {
+    width:1280px
+} */
 
 /* ーーーーーーー ヘッダー  ここから ーーーーーーー  */
+header {
+    width: 1280px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 header .wrapper {
     background-color: rgb(67, 92, 202);
-    width: 1280px;
+    /* width: 1280px; */
     max-width: 1280px;
     margin: 0 auto 10px auto ;     /*上右下左の順で 0 auto 130px auto */
 }
@@ -117,8 +167,15 @@ header ul li a:hover {
 /* ーーーーーーーー  ここから メインピクチャー  ーーーーーーーーーー */
 /* ーーーーーーーー  ここから メインピクチャー  ーーーーーーーーーー */
 
-.main-picture {
+#mainpicture {
     width: 1280px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+.main-picture {
+    /* width: 1280px; */
     max-width: 1280px;
     height: 620px; 
     margin: 0 auto;
@@ -180,6 +237,13 @@ header ul li a:hover {
 
 /* ーーーーーーーー  たのしさ 説明文    ーーーーーーーーーー */
 
+
+#happiness {
+    width: 1280px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .happiness-fishing h2{
     font-size: 2rem ;
     font-weight: 700;
@@ -195,6 +259,8 @@ header ul li a:hover {
 
 
 .happiness-fishing p {
+    width: 100%;
+    max-width: 1280px;
     font-size: 1.5rem;
     font-weight: 500;
     text-align: left ;
@@ -273,6 +339,13 @@ header ul li a:hover {
 
     /* ーーーーーーーー 釣りもの(魚種)の紹介 ここから ーーーーーーーー  */
     /* ーーーーーーーー 釣りもの(魚種)の紹介 ここから ーーーーーーーー  */
+#fishes {
+    width: 1280px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
 
 .fishes-fishing h2{
     font-size: 2rem ;
@@ -377,6 +450,13 @@ header ul li a:hover {
     /*   ーーー 魚とかんたん調理レシピ ここから  ーーーーーーーーーーー*/
     /*   ーーー 魚とかんたん調理レシピ ここから  ーーーーーーーーーーー*/
 
+#cooking {
+    width: 1280px;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
 #cooking .wrapper {
     padding: 0 auto;
     max-width: 1280px;
@@ -410,8 +490,10 @@ header ul li a:hover {
     /* ーーーーーーーーー ここから 調理レシピ ーーーーーーーーーーーーーーー */
 
 .section4-1 .wrapper4-1 {
-    padding: 0 auto;
+    width: 1280px;
     max-width: 1280px;
+    padding: 0 auto;
+
     margin: 0 auto 80px auto;
     background-color: rgb(214, 189, 205);
     /* background-color: rgb(207, 202, 223); */
@@ -464,11 +546,12 @@ header ul li a:hover {
 
 /*   ーーーーーーーーーー  釣行などなど みだし ーーーーーーーーーーーーーーーーー*/
 
-.gotofishing {
+#gotofishing {
     width: 1280px;
-    max-width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
     padding : 0 auto;
-    /* background-color: rgb(206, 114, 201); */
+        /* background-color: rgb(206, 114, 201); */
 }
 
 .gotofishing-fishing h2{
@@ -497,7 +580,7 @@ header ul li a:hover {
 #gotofishing {
     padding: 0 auto;
     max-width: 1280px;
-    margin: 0 auto 30px auto;
+    margin: 0 auto 80px auto;
     /* background-color: rgb(74, 104, 5); */
 }
 
@@ -611,5 +694,4 @@ footer .cp {
     /* background-color: blue; */
     font-size: 1.2rem;
 }
-
 
