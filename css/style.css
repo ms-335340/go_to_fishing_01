@@ -14,12 +14,6 @@ li {
     font-size: 1.2rem;
 }
 
-  /* 共通部分 みだしの幅をまとめて設定 */
-.wrapper {
-    max-width: 1280px;   
-    margin: 0 auto 80px auto ; 
-}
-
 
 /* ーーーーー 共通  ボタンのCSS ーーーーー */
 
@@ -55,14 +49,8 @@ li {
     align-items: right;
 }
 
-
 /* ーーーーー 共通  ボタンのCSS ここまでーーーーー */
 
-
-
-
-
-/*  ーーーーー 共通部分ここまで ーーーーーーーーー */
 
 
 /* 画面の背景全体の色 */
@@ -70,10 +58,12 @@ body {
     background-color:rgb(202, 202, 202);
 }
 
-/* main {
-    width:1280px
-} */
 
+/*  ーーーーー 共通部分ここまで ーーーーーーーーー */
+
+
+
+/* ーーーーーーー ヘッダー  ここから ーーーーーーー  */
 /* ーーーーーーー ヘッダー  ここから ーーーーーーー  */
 header {
     width: 1280px;
@@ -132,8 +122,6 @@ header .title-menu-row2 {
     align-items: center;
     max-width: 1280px;
     padding: 1% 4%;
-
-
 }
 
 
@@ -142,8 +130,6 @@ header ul {
     padding: 5px;
     align-items: center;
     /* background-color: blanchedalmond; */
-
-
 }
 
 /* ulの中のliの設定 */
@@ -170,19 +156,31 @@ header ul li a:hover {
 #mainpicture {
     width: 1280px;
     max-width: 1280px;
-    margin: 0 auto;
+    height: 620px;
+    overflow: hidden;
+    margin: 0 auto 80px auto;
 }
 
 
 .main-picture {
-    /* width: 1280px; */
-    max-width: 1280px;
+    width: 1280px;
     height: 620px; 
+    max-width: 1280px;
     margin: 0 auto;
     padding: 0 auto ; 
     position: relative;     
     /* 画像の上にテキストを重ねたい場合は、div要素（親要素）の中に画像と文字を子要素として入れ、
     親要素にposition: relative;、重ねたい子要素にposition: absolute;を指定*/
+
+    /* アニメーション */
+    animation:main-picture 10s infinite;
+}
+    /* アニメーション */
+@keyframes main-picture {
+    from {
+        opacity: 0;
+        transform: scale(1.5);
+    }    
 }
 
 
@@ -215,17 +213,14 @@ header ul li a:hover {
 
 
 .main-picture img{
-
     width: 100%;
     max-width: 1280px;
-
+    overflow: hidden;
     margin: 0 auto;
     object-fit: cover;
-
     position: absolute;     
     /* 画像の上にテキストを重ねたい場合は、div要素（親要素）の中に画像と文字を子要素として入れ、
     親要素にposition: relative;、重ねたい子要素にposition: absolute;を指定*/
-
 }
 
 /* ーーーーーーーー  メインピクチャー  ここまでーーーーーーーーーー */
@@ -235,15 +230,15 @@ header ul li a:hover {
 /* ーーーーーーーー  ここから たのしさ    ーーーーーーーーーー */
 /* ーーーーーーーー  ここから たのしさ    ーーーーーーーーーー */
 
+
 /* ーーーーーーーー  たのしさ 説明文    ーーーーーーーーーー */
-
-
 #happiness {
     width: 1280px;
     max-width: 1280px;
     margin: 0 auto;
 }
 
+/* ーーーーー ”釣りの楽しさ” タイトル ーーーーー */
 .happiness-fishing h2{
     font-size: 2rem ;
     font-weight: 700;
@@ -257,7 +252,7 @@ header ul li a:hover {
     border-bottom: 5px solid #414df0;
 }
 
-
+/* ーーーーー 説明文 ーーーーー */
 .happiness-fishing p {
     width: 100%;
     max-width: 1280px;
@@ -265,8 +260,10 @@ header ul li a:hover {
     font-weight: 500;
     text-align: left ;
     line-height: 1.5;
+    padding: 0 1rem 0 1rem; 
     /* background-color: rgb(176, 236, 176); */
-    margin-bottom: 30px;
+    /* margin-bottom: 10px; */
+        margin: 0 auto 30px auto;
 }
 
 
@@ -346,7 +343,6 @@ header ul li a:hover {
 }
 
 
-
 .fishes-fishing h2{
     font-size: 2rem ;
     font-weight: 700;
@@ -365,8 +361,10 @@ header ul li a:hover {
     font-weight: 500;
     text-align: left ;
     line-height: 1.5;
+    padding: 0 1rem 0 1rem;
+
     /* background-color: rgb(176, 236, 176); */
-    margin-bottom: 30px;
+        margin: 0 auto 30px auto;
 }
 
 
@@ -412,13 +410,13 @@ header ul li a:hover {
     font-size: 1.4rem;
     font-weight: 500;
     text-align: left;
-    margin-bottom: 1rem;
+    margin: 0 0.2rem 1rem 0.2rem;
 }
 
 /*   ーーー 釣りもの 魚種 の写真  追加説明 ーーーーーーーーーーー*/
 .section3 .wrapper3{
     width: 1280px;
-    padding: 0 auto;
+    padding: 0 1rem 0 1rem;
     max-width: 1280px;
     margin: 0 auto 80px auto;
     object-fit: cover;
@@ -464,7 +462,6 @@ header ul li a:hover {
 }
 
 
-
 .cooking-fishing h2{
     font-size: 2rem ;
     font-weight: 700;
@@ -483,9 +480,12 @@ header ul li a:hover {
     font-weight: 500;
     text-align: left ;
     line-height: 1.5;
+    padding: 0 1rem 0 1rem;
     /* background-color: rgb(176, 236, 176); */
-    margin-bottom: 5px;
+    /* margin-bottom: 5px; */
+    margin: 0 auto 30px auto;
 }
+
 
     /* ーーーーーーーーー ここから 調理レシピ ーーーーーーーーーーーーーーー */
 
@@ -493,7 +493,6 @@ header ul li a:hover {
     width: 1280px;
     max-width: 1280px;
     padding: 0 auto;
-
     margin: 0 auto 80px auto;
     background-color: rgb(214, 189, 205);
     /* background-color: rgb(207, 202, 223); */
@@ -541,8 +540,8 @@ header ul li a:hover {
 
 
 
-/* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど */
-/* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど *//* 釣行などなど */
+/* ーーーーーーーーー  ”釣行などなど”  ここから ーーーーーーーーーーーーーー  */
+/* ーーーーーーーーー  ”釣行などなど”  ここから ーーーーーーーーーーーーーー  */
 
 /*   ーーーーーーーーーー  釣行などなど みだし ーーーーーーーーーーーーーーーーー*/
 
@@ -572,9 +571,11 @@ header ul li a:hover {
     font-weight: 500;
     text-align: left ;
     line-height: 1.5;
+    padding: 0 1rem 0 1rem;
     /* background-color: rgb(176, 236, 176); */
-    margin-bottom: 5px;
+    margin: 0 auto 30px auto;
 }
+
 /*   ーーーーーーーーーー  釣行 みだし ここまで ーーーーーーーーーーーーーーーーー*/
 
 #gotofishing {
@@ -638,11 +639,10 @@ header ul li a:hover {
     opacity: 1;   /* 10% = 0.9   70％の透け率にする = 0.3 */
     box-shadow:10px 10px 10px rgba(0,0,0,0.5);
     /* text-shadow: 5px 5px 5px rgba(0,0,0,0.7); 色 色 色 透明度  */
-    /* transform: translateY(-50px); 50px 上にうごく */
 }
 
-
     /*   ーーーーー 釣行 もろもろ ここまで ーーーーーーーーーーーーーーー*/
+
 
     /* ーーーーーーー フッター ここから ーーーーーーーーーーーーーーーーー   */
     /* ーーーーーーー フッター ここから ーーーーーーーーーーーーーーーーー   */
